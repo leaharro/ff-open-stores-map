@@ -203,7 +203,7 @@
                                 </div>
                                 
                                 <div style="margin-top: 12px; text-align: center;">
-                                    <a href="${CONFIG.RESERVE_URL}" target="_blank" style="background: #3B82F6; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Reserve Now</a>
+                                    <a href="${CONFIG.RESERVE_URL}" target="_blank" style="background: #2C5134; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Reserve Now</a>
                                 </div>
                             </div>
                         `
@@ -536,7 +536,10 @@
                                                 href={CONFIG.RESERVE_URL}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 font-medium text-center block transition-colors text-lg"
+                                                className="w-full text-white px-4 py-3 rounded-lg font-medium text-center block transition-colors text-lg"
+                                                style={{backgroundColor: '#2C5134'}}
+                                                onMouseEnter={(e) => e.target.style.backgroundColor = '#1e3a26'}
+                                                onMouseLeave={(e) => e.target.style.backgroundColor = '#2C5134'}
                                             >
                                                 Reserve This Store
                                             </a>
